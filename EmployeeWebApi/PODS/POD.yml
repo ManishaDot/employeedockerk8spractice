@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: employee-pod
+  labels:
+    app: web
+spec:
+  containers:
+    - name: web-ctremployee
+      image: manishadotnet/k8spratice:employeeapiimg
+      ports:
+        - containerPort: 8083
